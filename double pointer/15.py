@@ -14,7 +14,7 @@ class Solution:
                     while i < j and nums[i] == nums[i-1]: i+=1 #去重 可以不写 仅仅加速剪枝
                 elif s > 0 :
                     j-=1
-                    while i < j and nums[j] == nums[j+1]: j-=1 
+                    while i < j and nums[j] == nums[j+1]: j-=1
                 else:
                     res.append([nums[k] , nums[i] , nums[j]])
                     i+=1
