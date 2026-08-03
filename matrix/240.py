@@ -13,3 +13,5 @@ class Solution:
 ##代码写法上while里面三个条件是互斥的所以用if elif else不能改
 ##target的判断从左下角的根节点开始，初始i j 赋值要类数组从0开始
 ##至于if elif里面怎么删减行画个图自己想想就行
+
+##len(matrix)和len(matrix[0])的区别，前者指的是矩阵有多少行，后者指多少列
