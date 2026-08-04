@@ -26,4 +26,6 @@ class Solution :
         for i in range(steps) :
             cur = cur.next
         return cur
-    
+    #解
+    def isPalindrome(self , head : Optional[ListNode]) -> bool :
+        
