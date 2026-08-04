@@ -9,7 +9,6 @@ class Solution :
         pre = None
         cur = head
         while cur :
-    def isPalindrome(self , head : Optional[ListNode]) -> bool :
-
-
-
+            tmp = cur.next
+            cur.next = pre
+            
