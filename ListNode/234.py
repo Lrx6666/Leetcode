@@ -15,7 +15,7 @@ class Solution :
             cur = tmp
         return pre
     #找中间节点
-    def middle (self , head : Optional[ListNode]) ->Optional[ListNode] :
+    def middleNode(self , head : Optional[ListNode]) ->Optional[ListNode] :
         cnt = 0
         cur = head
         while cur is not None :
@@ -28,4 +28,13 @@ class Solution :
         return cur
     #解
     def isPalindrome(self , head : Optional[ListNode]) -> bool :
-        
+        mid = self.middleNode(head)
+        head2 = h2 = self.reverseList(mid)
+        while head2 :
+            if head.val != head2.val :
+                self.reverseList(h2)
+                return False
+            head = head.next
+            head2 = h2.next
+        self.reverseList(h2)
+        return True
