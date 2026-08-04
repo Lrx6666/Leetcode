@@ -4,8 +4,8 @@ class ListNode :
         self.val = val
         self.next = next
 class Solution :
-    #找中间节点的函数
-    def middleNode (self , head : Optional[ListNode] ) -> Optional[ListNode] :
+    #反转链表
+    def reverseList (self , head : Optional[ListNode] ) -> Optional[ListNode] :
         pre = None
         cur = head
         while cur :
@@ -14,4 +14,6 @@ class Solution :
             pre = cur
             cur = tmp
         return pre
-    def
+    #找中间节点
+    def middle (self , head : Optional[ListNode]) ->Optional[ListNode] :
+
