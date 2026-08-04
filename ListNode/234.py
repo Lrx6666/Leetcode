@@ -16,4 +16,14 @@ class Solution :
         return pre
     #找中间节点
     def middle (self , head : Optional[ListNode]) ->Optional[ListNode] :
-
+        cnt = 0
+        cur = head
+        while cur is not None :
+            cnt += 1
+            cur = cur.next
+        steps = cnt // 2
+        cur = head
+        for i in range(steps) :
+            cur = cur.next
+        return cur
+    
