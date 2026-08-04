@@ -35,6 +35,6 @@ class Solution :
                 self.reverseList(h2)
                 return False
             head = head.next
-            head2 = h2.next
+            head2 = head2.next
         self.reverseList(h2)
         return True
