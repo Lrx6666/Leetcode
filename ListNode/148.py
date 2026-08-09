@@ -10,7 +10,7 @@ from hot100.ListNode.LinkedList import ListNode
 
 class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if not head or head.next :
+        if not head or not head.next :
             return head
         #1 切断链表
         slow = head
@@ -24,8 +24,7 @@ class Solution:
         left = self.sortList(head)
         right = self.sortList(mid)
         #3 合并
-        cur = ListNode(0)
-        dummy = ListNode(0)
+        cur =  dummy = ListNode(0)
         while left and right :
             if left.val < right.val :
                 cur.next = left
@@ -40,6 +39,6 @@ class Solution:
             else :
                 cur.next = right
 
-            return dummy.next
+        return dummy.next
 
 
