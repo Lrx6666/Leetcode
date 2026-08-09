@@ -34,10 +34,12 @@ class Solution:
                 cur.next = right
                 right = right.next
             cur = cur.next
+            #left right里有一个为空了直接接到cur后面
             if left :
                 cur.next = left
             else :
                 cur.next = right
+
             return dummy.next
 
 
