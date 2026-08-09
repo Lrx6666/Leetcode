@@ -14,9 +14,8 @@ class Solution :
                 cur.next.random = cur.random.next #把原来cur.random的next给克隆羊的random
             cur = cur.next.next #跳过克隆羊
         #3 删除交错链表中的原链表节点，剩下的节点即为新链表
-        cur = dummy = Node(0, head)
+        cur = dummy = Node(0 , head) #关键的赋值
         while cur.next :
-            cur = head
             cur.next = cur.next.next #删除原节点
             cur = cur.next
         return dummy.next
