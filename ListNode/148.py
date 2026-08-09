@@ -9,12 +9,18 @@ class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if not head or head.next :
             return head
-        #切断链表
+        #1 切断链表
         slow = head
         fast = head.next #画图看速度路程就知道了
         while fast and fast.next :
             slow = slow.next
             fast = fast.next.next
-            mid = slow.next #后半段第一个
-            slow.next = None #前半段最后一个
+        mid = slow.next #后半段第一个
+        slow.next = None #前半段最后一个
+        #2 定义前后端链表
+        left = self.sortList(head)
+        right = self.sortList(mid)
+        #3 合并
+        h = res 
+
 
