@@ -8,4 +8,8 @@
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if not root : return 0
-        
+        return max(self.maxDepth(root.left) , self.maxDepth(root.right)) + 1
+
+
+#递归
+#最简单的方法是返回左右子树中较大的再+1
