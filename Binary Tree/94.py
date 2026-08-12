@@ -11,13 +11,14 @@ class Solution:
         def dfs(node : Optional[TreeNode]) -> None :
             if node is None :
                 return
-            dfs(node.left)
-            ans.append(node.val)
-            dfs(node.right)
+            dfs(node.left) #递归左子树
+            ans.append(node.val) #根
+            dfs(node.right) #递归右子树
 
         ans = []
         dfs(root)
         return ans
 
 
+#三种遍历的遍历顺序
 
