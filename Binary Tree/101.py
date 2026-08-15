@@ -20,5 +20,5 @@ class Solution:
 #左右都空 true
 #左右有一个是空 false
 #左右值不等 false
-#往下递归判断
+#往下递归判断 画个图判断深度为2的dfs怎么写
 #
